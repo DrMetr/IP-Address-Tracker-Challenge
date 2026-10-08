@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --gray-950: hsl(0, 0%, 17%);
+  --gray-400: hsl(0, 0%, 58%);
+  --font-display: "Rubik", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-background {
+  background-image: url("images/pattern-bg-desktop.png");
+  background-size: cover;
+}
+
+.search-output {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+label {
+  color: var(--gray-400);
+  text-transform: uppercase;
+  font-size: x-small;
+  font-weight: 600;
+  letter-spacing: 20%;
+
+  @media (width >= 640px) {
+    font-size: smaller;
+  }
+}
+
+.output-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1lh 0 1lh;
+
+  @media (width <= 640px) {
+    margin-bottom: 0.5lh;
+  }
+}
+
+footer span {
+  color: white;
+}
+
+footer span a {
+  color: black;
+  text-decoration: underline;
+}

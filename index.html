@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-[Rubik]">
+    <main>
+      <section
+        class="data-container image-background h-[33vh] flex flex-col items-center justify-center relative"
+      >
+        <h1 class="text-white text-3xl font-semibold">IP Address Tracker</h1>
+        <form class="mt-[1lh] mb-[1lh]">
+          <label for="search-input" class="hidden"
+            >Search for any IP address or domain</label
+          >
+          <div class="flex flex-row bg-transparent">
+            <input
+              type="text"
+              name="search-input"
+              id="search-input"
+              placeholder="Search for any IP address or domain"
+              class="p-[1rem] w-[40vw] min-w-[22rem] bg-white rounded-l-lg"
+            />
+            <button
+              class="bg-black p-[1rem] hover:bg-[var(--gray-950)] active:bg-[var(--gray-400)] rounded-r-lg"
+            >
+              <img src="images/icon-arrow.svg" alt="submit" />
+            </button>
+          </div>
+        </form>
+        <div
+          class="output-container sm:flex-row p-[1lh] absolute top-[100%] sm:translate-y-[-50%] translate-y-[-25%] z-2 bg-white flex flex-col items-center justify-between rounded-xl divide-slate-300 sm:divide-x-2 divide-solid"
+        >
+          <div class="output-element">
+            <label for="IP-adress">IP Address</label>
+            <output name="IP-adress" for="search-input" class="search-output"
+              >132.652.527.656</output
+            >
+          </div>
+          <div class="output-element">
+            <label for="Location">Location</label>
+            <output name="Location" for="search-input" class="search-output"
+              >Brooklyn, NY 10001</output
+            >
+          </div>
+          <div class="output-element">
+            <label for="Timezone">Timezone</label>
+            <output name="Timezone" for="search-input" class="search-output"
+              >UTC-05:00</output
+            >
+          </div>
+          <div class="output-element">
+            <label for="ISP">ISP</label>
+            <output name="ISP" for="search-input" class="search-output"
+              >SpaceX Starlink</output
+            >
+          </div>
+        </div>
+      </section>
+      <section class="map-container relative h-[67vh]">
+        <div class="arrow absolute m-[1rem]">
+          <img src="images/icon-location.svg" />
+        </div>
+        <gmp-map
+          class="h-full w-full"
+          center="-34.397,150.644"
+          zoom="8"
+          mapId="DEMO_MAP_ID"
+        >
+        </gmp-map>
+      </section>
+    </main>
+    <footer
+      class="attribution image-background fixed inset-x-0 bottom-0 flex flex-col items-center gap-[0.5rem] sm:flex-row"
+    >
+      <span>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"
+          >Frontend Mentor</a
+        >.</span
+      ><span>Coded by <a href="https://github.com/DrMetr">DrMetr</a>.</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
