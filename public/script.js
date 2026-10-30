@@ -21,7 +21,6 @@ const marker = L.marker(defaultView, { icon: customIcon }).addTo(map);
 
 async function updateMapByIP(ip = initialLocation) {
   try {
-    const query = ip ? `&ipAddress=${encodeURIComponent(ip)}` : "";
     const url = `/api/geo${ip ? `?ip=${encodeURIComponent(ip)}` : ""}`;
 
     const res = await fetch(url);

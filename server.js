@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-// Раздаём всё из папки public (index.html откроется на "/")
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/api/geo", async (req, res) => {
