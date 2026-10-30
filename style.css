@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "leaflet/dist/leaflet.css";
 
 :root {
   --gray-950: hsl(0, 0%, 17%);
@@ -52,6 +53,6 @@ footer span {
 }
 
 footer span a {
-  color: black;
+  color: rgb(15, 8, 32);
   text-decoration: underline;
 }

@@ -18,6 +18,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <style>
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
 
     <title>Frontend Mentor | IP Address Tracker</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -52,45 +65,44 @@
         >
           <div class="output-element">
             <label for="IP-adress">IP Address</label>
-            <output name="IP-adress" for="search-input" class="search-output"
-              >132.652.527.656</output
-            >
+            <output
+              name="IP-adress"
+              for="search-input"
+              class="search-output"
+            ></output>
           </div>
           <div class="output-element">
             <label for="Location">Location</label>
-            <output name="Location" for="search-input" class="search-output"
-              >Brooklyn, NY 10001</output
-            >
+            <output
+              name="Location"
+              for="search-input"
+              class="search-output"
+            ></output>
           </div>
           <div class="output-element">
             <label for="Timezone">Timezone</label>
-            <output name="Timezone" for="search-input" class="search-output"
-              >UTC-05:00</output
-            >
+            <output
+              name="Timezone"
+              for="search-input"
+              class="search-output"
+            ></output>
           </div>
           <div class="output-element">
             <label for="ISP">ISP</label>
-            <output name="ISP" for="search-input" class="search-output"
-              >SpaceX Starlink</output
-            >
+            <output
+              name="ISP"
+              for="search-input"
+              class="search-output"
+            ></output>
           </div>
         </div>
       </section>
-      <section class="map-container relative h-[67vh]">
-        <div class="arrow absolute m-[1rem]">
-          <img src="images/icon-location.svg" />
-        </div>
-        <gmp-map
-          class="h-full w-full"
-          center="-34.397,150.644"
-          zoom="8"
-          mapId="DEMO_MAP_ID"
-        >
-        </gmp-map>
+      <section class="map-container relative h-[60vh]">
+        <div class="arrow absolute z-0" id="map"></div>
       </section>
     </main>
     <footer
-      class="attribution image-background fixed inset-x-0 bottom-0 flex flex-col items-center gap-[0.5rem] sm:flex-row"
+      class="attribution image-background fixed inset-x-0 bottom-0 flex flex-col items-center justify-center gap-[0.5rem] sm:flex-row"
     >
       <span>
         Challenge by
@@ -100,6 +112,11 @@
         >.</span
       ><span>Coded by <a href="https://github.com/DrMetr">DrMetr</a>.</span>
     </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

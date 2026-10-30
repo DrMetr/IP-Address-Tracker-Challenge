@@ -1,0 +1,30 @@
+{
+  "name": "ip-address-tracker-challenge",
+  "version": "1.0.0",
+  "description": "This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "keywords": [
+    "IPtracker",
+    "FrontendMentorChallenge"
+  ],
+  "homepage": "https://github.com/DrMetr/IP-Address-Tracker-Challenge#readme",
+  "bugs": {
+    "url": "https://github.com/DrMetr/IP-Address-Tracker-Challenge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrMetr/IP-Address-Tracker-Challenge.git"
+  },
+  "license": "ISC",
+  "author": "Drmetr",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {}
+}
