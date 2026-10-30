@@ -15,8 +15,4 @@ app.get("/api/geo", async (req, res) => {
   res.json(data);
 });
 
-app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
-});
-
 app.listen(process.env.PORT || 3000);
